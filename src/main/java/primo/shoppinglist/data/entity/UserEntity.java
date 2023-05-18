@@ -38,7 +38,7 @@ public class UserEntity extends BaseEntity {
     }
 
     @Column(unique = true)
-    @Email(message = "Invalid password")
+    @Email(message = "Invalid email")
     public String getEmail() {
         return email;
     }
