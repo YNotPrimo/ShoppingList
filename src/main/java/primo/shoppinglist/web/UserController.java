@@ -19,8 +19,8 @@ import primo.shoppinglist.service.UserService;
 @Controller
 @RequestMapping("/users")
 public class UserController {
-    private UserService userService;
-    private ModelMapper mapper;
+    private final UserService userService;
+    private final ModelMapper mapper;
 
     @Autowired
     public UserController(UserService userService, ModelMapper mapper) {

@@ -13,8 +13,8 @@ import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
-    private UserRepository userRepository;
-    private ModelMapper mapper;
+    private final UserRepository userRepository;
+    private final ModelMapper mapper;
 
     @Autowired
     public UserServiceImpl(UserRepository userRepository, ModelMapper mapper) {
