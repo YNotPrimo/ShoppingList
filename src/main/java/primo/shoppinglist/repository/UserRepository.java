@@ -6,4 +6,5 @@ import primo.shoppinglist.data.entity.UserEntity;
 
 @Repository
 public interface UserRepository extends JpaRepository<UserEntity, String> {
+    UserEntity findByUsernameAndPassword(String username, String password);
 }
