@@ -9,6 +9,9 @@ public class CategoryEntity extends BaseEntity {
     private CategoryEnum category;
     private String description;
 
+    public CategoryEntity() {
+    }
+
     public CategoryEntity(CategoryEnum category, String desc) {
         this.category = category;
         this.description = desc;
