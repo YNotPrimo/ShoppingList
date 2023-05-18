@@ -37,7 +37,7 @@ public class UserController {
     }
 
     @PostMapping("/register")
-    public String postRegister(@Valid UserRegisterBindingModel model, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
+    public String registerPost(@Valid UserRegisterBindingModel model, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
         if (bindingResult.hasErrors()) {
             redirectAttributes.addFlashAttribute("userRegisterBindingModel", model);
 
